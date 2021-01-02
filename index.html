@@ -4,8 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/survey-jquery/modern.min.css">
+  <link rel="stylesheet" href="./node_modules/survey-jquery/survey.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+  <main class="main">
+    <div class="container">
+      
+      <div class="task">
+        <h2>Задание 1. Верстка</h2>
+        <p>Почему внизу этой страницы слишком большие отступы от соцсетей от низа страницы до «4BRAIN.RU © 2012-2020». Что поменять в коде, чтобы сделать их меньше?</p>
   
+        <h3>Решение:</h3>
+        <p>
+          <img src="./img/task-1.png" alt="Первое-задание-решение">
+          <p>
+            Необходимо удалить <span class="code">line-height: 500px</span> для селектора<span class="code">#b-footer-cr span</span>
+          </p>
+          Из этого:
+          <pre class="code">
+  
+    #b-footer-cr span {
+      line-height: 500px;
+    }
+          </pre>
+          Сделать это(или просто удалить этот селектор):
+          <pre class="code">
+  
+    #b-footer-cr span {
+  
+    } 
+          </pre>
+        </p>
+      </div> <!-- .task -->
+
+      <div class="task">
+        <h2>Задание 2. Дизайн</h2>
+        <p>Сверстайте html+css аккуратную форму опроса с подсчётом голосов (как в vk). После выбора ответа показывается, сколько людей проголосовало за каждый вариант в процентах и всего. Бэкэнд не нужен, нужен только внешний вид формы и переключение вида (выберите вариант => результаты)</p>
+        <p>Кто вы?</p>
+        <ul>
+          <li>Интроверт</li>
+          <li>Экстраверт</li>
+          <li>Не знаю</li>
+        </ul>
+        <h3>Решение:</h3>
+
+        
+
+      </div>
+
+      
+
+
+    </div> <!-- .container -->
+  </main>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/survey-jquery/survey.jquery.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
