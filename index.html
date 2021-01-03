@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./node_modules/survey-jquery/modern.min.css">
-  <link rel="stylesheet" href="./node_modules/survey-jquery/survey.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -51,7 +49,12 @@
         </ul>
         <h3>Решение:</h3>
 
-        
+        <form id="whoAreYouForm">
+          <label>Кто ты?</label>
+          <input name="whoAreYou" type="radio">
+          <input name="whoAreYou" type="radio">
+          <input name="whoAreYou" type="radio">
+        </form>
 
       </div>
 
@@ -61,8 +64,6 @@
     </div> <!-- .container -->
   </main>
 
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/survey-jquery/survey.jquery.min.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
