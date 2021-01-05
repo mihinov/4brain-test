@@ -2,13 +2,12 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  font-size: 16px;
 }
 
 img {
@@ -18,6 +17,12 @@ img {
 
 h2 {
   font-weight: normal;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 ul {
@@ -30,6 +35,10 @@ p {
 
 main {
   padding: 40px 0;
+}
+
+.input-field.col label {
+  left: auto;
 }
 
 .container {
@@ -45,6 +54,10 @@ main {
   background-color: #e4e6e8;
   padding: 2px 4px;
   border-radius: 3px;
+}
+
+.task + .task {
+  margin-top: 40px;
 }
 
 .form {
@@ -118,3 +131,15 @@ main {
   transform: translate(0, -50%);
 }
 
+.selects {
+  padding: 20px 0;
+}
+
+.selects > * {
+  display: block;
+  max-width: 200px;
+}
+
+.selects > * + * {
+  margin-top: 50px;
+}

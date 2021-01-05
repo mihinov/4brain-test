@@ -62,7 +62,7 @@ class Quiz {
             arrFields.forEach((item, i) => {
               item.classList.add('active');
               const itemValue = item.getAttribute('data-obj');
-              const percent = statistics[itemValue] * 10;
+              const percent = Math.floor(statistics[itemValue] * 10);
               item.querySelector('.fieldRadio__statistics').innerHTML = `${percent} %`;
             });
             fieldRadio.classList.add('click');
@@ -97,3 +97,6 @@ const newQuiz = new Quiz({
   nameForm: 'whoAreYouForm',
   nameInputRadio: 'whoAreYou'
 });
+
+const selectElems = document.querySelectorAll('select');
+const instances = M.FormSelect.init(selectElems, {});
