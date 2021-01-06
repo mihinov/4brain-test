@@ -41,6 +41,15 @@ main {
   left: auto;
 }
 
+ul:not(.browser-default) {
+	padding-left: 20px;
+	list-style-type: inherit;
+}
+
+ul:not(.browser-default)>li {
+  list-style-type: inherit;
+}
+
 .container {
   display: block;
   width: 100%;
