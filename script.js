@@ -62,8 +62,8 @@ class Quiz {
             arrFields.forEach((item, i) => {
               item.classList.add('active');
               const itemValue = item.getAttribute('data-obj');
-              const percent = Math.floor(statistics[itemValue] * 10);
-              item.querySelector('.fieldRadio__statistics').innerHTML = `${percent} %`;
+              const percent = Math.round((statistics[itemValue] / sum) * 100);
+              item.querySelector('.fieldRadio__statistics').innerHTML = `${statistics[itemValue]} чел, ${percent} %`;
             });
             fieldRadio.classList.add('click');
           });
@@ -84,7 +84,7 @@ class Quiz {
         res({
             "Интроверт": 3,
             "Экстраверт": 4,
-            "Не знаю": 2
+            "Не знаю": 20
         });
       } catch (e) {
         rej(e);
