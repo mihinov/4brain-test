@@ -56,6 +56,10 @@ main {
   border-radius: 3px;
 }
 
+.word-wrap-break-word {
+  word-wrap: break-word;
+}
+
 .task + .task {
   margin-top: 40px;
 }
